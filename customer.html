@@ -10,16 +10,28 @@
     <div id="div1"></div>
     <img src="assets/img/logo.png" alt="logo">
     <nav>
-        <ol>
-            <li><a href="home">Home</a></li>
-            <li><a href="customer.html">Customer</a></li>
-            <li><a href="item.html">Item</a></li>
-            <li><a href="#order">Order</a></li>
-        </ol>
-        <ol id="ol1">
-            <li><a href="#sign_up">Sign up</a></li>
-            <li><a href="#log_out">Log Out</a></li>
-        </ol>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="customer.html">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="item.html">Item</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+            </li>
+        </ul>
+        <ul id="ol1" class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+        </ul>
         <hr>
     </nav>
 </header>
@@ -32,31 +44,67 @@
         </a>
     </div>
 </nav>
+
 <div id="cusSearch"></div>
-<button id="btn" type="button" class="btn btn-secondary">New Customer</button>
-<button id="btn1" type="button" class="btn btn-secondary">View All Customer</button>
-<h4 id="cus">Customer Search</h4>
-<form id="search" class="d-flex" role="search">
-    <input class="form-control me-2" type="search" placeholder="Input Name/ NIC Here" aria-label="Search">
-    <button class="btn btn-outline-success" type="submit">Search</button>
-</form>
+<div id="cu1" class="input-group flex-nowrap">
+    <span class="input-group-text">Customer ID :-</span><br>
+    <input id="cuS1" type="text" class="form-control" placeholder="C001" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="cu2" class="input-group flex-nowrap">
+    <span class="input-group-text">Customer Name :-</span><br>
+    <input id="cuS2" type="text" class="form-control" placeholder="Thashi" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="cu3" class="input-group flex-nowrap">
+    <span class="input-group-text">Contact :-</span><br>
+    <input id="cuS3" type="text" class="form-control" placeholder="xx xxx xxxx" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="cu4" class="input-group flex-nowrap">
+    <span class="input-group-text">Address :-</span><br>
+    <input id="cuS4" type="text" class="form-control" placeholder="Panadura" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
 <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
 <button id="UpdateBtn" type="button" class="btn btn-primary">Update</button>
-<button id="clearBtn" type="button" class="btn btn-info">Clear</button>
+<button id="saveBtn" type="button" class="btn btn-info">Save</button>
 
 
-<div id="table" class="col col-lg-6 col-md-12 col-sm-12 col-12">
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Name</th>
-            <th scope="col">Address</th>
-            <th scope="col">Contact</th>
-        </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
+
+<table id="table" class="table">
+    <thead>
+    <tr>
+        <th scope="col">No</th>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Address</th>
+        <th scope="col">Contact</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    <tr>
+        <th scope="row">1</th>
+        <td>c001</td>
+        <td>Thashi</td>
+        <td>Panadura</td>
+        <td>0757206813</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>c002</td>
+        <td>madushani</td>
+        <td>Galle</td>
+        <td>0754677808</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>c003</td>
+        <td>Dananja</td>
+        <td>Haputhale</td>
+        <td>0705253486</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>

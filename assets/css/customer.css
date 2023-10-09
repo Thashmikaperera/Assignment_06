@@ -28,13 +28,13 @@ header>nav>hr{
     top: 50%;
 }
 
-header>nav>ol>li{
+header>nav>ul>li{
     text-decoration: none;
     display: inline-block;
     margin-right: 20px;
 }
 
-header>nav>ol>li>a{
+header>nav>ul>li>a{
     text-decoration: none;
     color: #86CEC7;
     font-size: 20px;
@@ -59,8 +59,9 @@ header>nav>ol>li>a{
 
 #divCustomer{
     width: 1280px;
-    height: 30px;
-    background-color: #D9D9D9;
+    height: 37px;
+    background-color: #1D7874;
+    opacity: 80%;
     position: absolute;
     top: 12%;
     left: 3%;
@@ -68,85 +69,119 @@ header>nav>ol>li>a{
 
 #customers{
     position: absolute;
-    top: 9.5%;
-    left: 6.5%;
+    top: 10%;
+    left: 6%;
 }
 
 #imgCus{
     position: absolute;
-    top: 12.4%;
+    top: 12.8%;
     left: 4%;
 }
 
 #cusSearch{
-    width: 931px;
-    height: 30px;
+    width: 800px;
+    height: 250px;
+    border-radius: 20px;
     background-color: #86CEC7;
+    opacity: 80%;
     position: absolute;
     top: 20%;
-    left: 5%;
+    left: 7%;
 }
 
-#cus{
+#cu1{
     position: absolute;
-    top: 17.5%;
-    left: 6%;
-    color: white;
+    top: 25%;
+    left: 12%;
+    font-size: 22px;
 }
 
-#btn{
-    width: 150px;
-    height: 31px;
+#cuS1{
+    width: 200px;
+    height: 20px;
     position: absolute;
-    background-color: #2E8D8F;
-    top: 19.8%;
-    right: 15.9%;
+    left: 15%;
 }
 
-#btn1{
-    width: 150px;
-    height: 31px;
+#cu2{
     position: absolute;
-    background-color: #FCBF49;
-    top: 19.8%;
-    right: 5%;
+    top: 25%;
+    left: 40%;
+    font-size: 22px;
 }
 
-#search{
+#cuS2{
+    width: 200px;
+    height: 20px;
     position: absolute;
-    top: 28%;
-    left: 5%;
+    left: 15%;
+}
+
+#cu3{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 22px;
+}
+
+#cuS3{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 26%;
+}
+
+#cu4{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    font-size: 22px;
+}
+
+#cuS4{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    left: 22%;
 }
 
 #deleteBtn{
-    width: 70px;
+    width: 90px;
     height: 30px;
     position: absolute;
-    top: 37%;
-    left: 6%;
+    top: 48%;
+    right: 18%;
     background-color: red;
 }
 
 #UpdateBtn{
-    width: 70px;
+    width: 90px;
     height: 30px;
     position: absolute;
-    top: 37%;
-    left: 12%;
+    top: 38%;
+    right: 18%;
     background-color: #165BAA;
 }
 
-#clearBtn{
-    width: 70px;
+#saveBtn{
+    width: 90px;
     height: 30px;
     position: absolute;
-    top: 37%;
-    left: 18%;
+    top: 28%;
+    right: 18%;
     background-color: #FFA4B6;
 }
 
-#table{
+
+.table{
+    width: 1000px;
+    height: 150px;
     position: absolute;
-    top: 50%;
-    left: 20%;
+    top: 65%;
+    left: 15%;
+}
+
+#tbody>tr{
+    text-align: center;
 }

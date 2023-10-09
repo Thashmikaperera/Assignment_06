@@ -10,16 +10,28 @@
     <div id="div1"></div>
     <img src="assets/img/logo.png" alt="logo">
     <nav>
-        <ol>
-            <li><a href="home">Home</a></li>
-            <li><a href="customer.html">Customer</a></li>
-            <li><a href="item.html">Item</a></li>
-            <li><a href="#order">Order</a></li>
-        </ol>
-        <ol id="ol1">
-            <li><a href="#sign_up">Sign up</a></li>
-            <li><a href="#log_out">Log Out</a></li>
-        </ol>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="customer.html">Customer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="item.html">Item</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">Order</a>
+            </li>
+        </ul>
+        <ul id="ol1" class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Sign Up</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Log Out</a>
+            </li>
+        </ul>
         <hr>
     </nav>
 </header>
@@ -33,30 +45,67 @@
     </div>
 </nav>
 <div id="itemSearch"></div>
-<button id="btn" type="button" class="btn btn-secondary">New Item</button>
-<button id="btn1" type="button" class="btn btn-secondary">View All Items</button>
-<h4 id="item">Item Search</h4>
-<form id="search" class="d-flex" role="search">
-    <input class="form-control me-2" type="search" placeholder="Input Item Name and /code Here" aria-label="Search">
-    <button class="btn btn-outline-success" type="submit">Search</button>
-</form>
+<div id="it1" class="input-group flex-nowrap">
+    <span class="input-group-text">Item Code :-</span><br>
+    <input id="itS1" type="text" class="form-control" placeholder="i001" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="it2" class="input-group flex-nowrap">
+    <span class="input-group-text">Description :-</span><br>
+    <input id="itS2" type="text" class="form-control" placeholder="Pen" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="it3" class="input-group flex-nowrap">
+    <span class="input-group-text">Price :-</span><br>
+    <input id="itS3" type="text" class="form-control" placeholder="20.00" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
+<div id="it4" class="input-group flex-nowrap">
+    <span class="input-group-text">Qty :-</span><br>
+    <input id="itS4" type="text" class="form-control" placeholder="12" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+
 <button id="deleteBtn" type="button" class="btn btn-danger">Delete</button>
 <button id="UpdateBtn" type="button" class="btn btn-primary">Update</button>
-<button id="clearBtn" type="button" class="btn btn-info">Clear</button>
+<button id="saveBtn" type="button" class="btn btn-info">Save</button>
 
 
-<div id="table" class="col col-lg-6 col-md-12 col-sm-12 col-12">
-    <table class="table">
-        <thead>
-        <tr>
-            <th scope="col">Code</th>
-            <th scope="col">Description</th>
-            <th scope="col">Qty</th>
-            <th scope="col">price</th>
-        </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
+
+
+
+<table id="table" class="table">
+    <thead>
+    <tr>
+        <th scope="col">No</th>
+        <th scope="col">Code</th>
+        <th scope="col">Description</th>
+        <th scope="col">Qty</th>
+        <th scope="col">Price</th>
+    </tr>
+    </thead>
+    <tbody id="tbody">
+    <tr>
+        <th scope="row">1</th>
+        <td>i001</td>
+        <td>pen</td>
+        <td>500</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td>i002</td>
+        <td>pencil</td>
+        <td>100</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td>i003</td>
+        <td>book</td>
+        <td>1000</td>
+        <td>420</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
